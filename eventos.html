@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>HANNA'S HOTEL</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap CSS-->
+    <!-- BootStrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- BootStrap Icons  -->
+    <link rel="stylesheet" href="./estilos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar BootStrap -->
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./imagenes/icono-timbre.svg" alt="icono-timbre">
+        <span class="text-light">Hotel AIRES DEL ESTE</span>        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <img src="./imagenes/menu-hamburguer.svg" alt="Icono Menu Hamburguesa">
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./consulta.html">Consultas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./reservas.html">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./eventos.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./dondeEstamos.html">Donde estamos
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-carrusel">
+    <!-- <div class="container d-flex justify-content-center align-items-center correccion"> -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/carrusel/1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-success bg-opacity-75">
+            <h5>Juegos de Campo</h5>
+            <p>Disfruta la comida de los cocineros de la zona.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/carrusel/3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-success bg-opacity-75">
+            <h5>Viernes nos relajamos...</h5>
+            <p>Acercate a la parrilla a desgustar nuestros apetizers.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/carrusel/4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-success bg-opacity-75">
+            <h5>Sabados con todo...</h5>
+            <p>Bandas en vivo cada ultimo sabado de cada mes.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./imagenes/carrusel/5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-success bg-opacity-75">
+            <h5>Domingos de tradicion</h5>
+            <p>Despedimos la semana con efecto de luces, fiesta y mucha diversion.</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    <!-- </div> -->
+  </div>
+</div>    
+</body>    
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="./js.js"></script>
+</html>

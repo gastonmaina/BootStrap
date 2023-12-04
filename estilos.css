@@ -1,0 +1,110 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Estilos Personales */
+.navbar-nav a{
+    color: white;
+}
+
+.main-section{
+    background-image: url("./imagenes/fondoPrincipal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 64px);
+    
+}
+
+.modalThanks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.correccion{
+    min-height: calc(100vh - 66px);
+}
+
+.correccion-form{
+    width: 50%;
+}
+
+/* Modificaciones en Bootstrap */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link:hover, .nav-link:focus {
+    /* color: rgb(227, 9, 227); */
+    color: black;
+    font-weight: 600;
+}
+
+.container-carrusel{
+    height: calc(100vh - 56px);
+    overflow-y: hidden;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    visibility: visible;
+}
+
+.oculto{
+    visibility: hidden;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .correccion-form{
+        width: 100%;
+    }
+    .container-carrusel{
+        width: 100%;
+        margin: auto;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .correccion-form{
+        width: 60%;
+    }
+
+    .container-carrusel{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container-carrusel{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }

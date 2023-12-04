@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>HANNA'S HOTEL</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap CSS-->
+    <!-- BootStrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Loader  -->
+    <link rel="stylesheet" href="./loader.css">
+    <!-- Especificos -->
+    <link rel="stylesheet" href="./estilos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar BootStrap -->
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./imagenes/icono-timbre.svg" alt="icono-timbre">
+        <span class="text-light">Hotel AIRES DEL ESTE</span>        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <img src="./imagenes/menu-hamburguer.svg" alt="Icono Menu Hamburguesa">
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Consultas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./reservas.html">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./eventos.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./dondeEstamos.html">Donde estamos
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid main-section">
+    <div class="container d-flex justify-content-start align-items-center correccion">
+      <form action="https://formsubmit.co/gaston.maina.sj@gmail.com" method="POST" 
+      class="bg-opacity-25 bg-success p-5 correccion-form">
+        <input type="hidden" name="_next" value="http://localhost:5500/thanksPage.html">
+        <input 
+          type="text" 
+          name="nombre" 
+          class="form-control" 
+          placeholder="Ingrese su nombre..."
+          required>
+          <br>
+          <input 
+          type="email" 
+          name="email"
+          pattern="[A-Za-z0-9]*@[A-Za-z]*.com"
+          class="form-control" 
+          placeholder="Ingrese su numero email...">
+          <br>
+        <textarea 
+          type="text" 
+          name="consulta" 
+          required
+          rows="4"
+          placeholder="Ingrese su consulta..."
+          class="form-control mb-3" style="resize: none;"></textarea>
+        <button class="btn btn-success p-2 fs-4 w-100" id="btnEnviar">Enviar</button>
+      </form>
+    </div>    
+  </div>
+
+  <span class="loader oculto" id="loadingIcon"></span>
+</body>    
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="./js.js"></script>
+</html>
