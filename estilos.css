@@ -34,9 +34,9 @@
     min-height: calc(100vh - 66px);
 }
 
-.correccion-form{
+/* .correccion-form{
     width: 50%;
-}
+} */
 
 /* Modificaciones en Bootstrap */
 .navbar-toggler:focus {
