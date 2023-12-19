@@ -15,6 +15,9 @@ const formularioReservas = document.getElementById("formularioReservas")
 const modalReservas = document.getElementById("modalReservas")
 
 formularioReservas.addEventListener("click", handleFormularioReserva)
+modalReservas.addEventListener("click", ()=>{
+    modalReservas.classList.add("hideModal")
+})
 
 onValue(reservasInDB, function(snapshot){
     if(snapshot.exists()){
@@ -31,7 +34,7 @@ function handleFormularioReserva(e){
         let fechaIngreso = (new Date(formularioReservas.fechaInicio.value)).getTime()
         let fechaEgreso = (new Date(formularioReservas.fechaSalida.value)).getTime()
         if(fechaEgreso<=fechaIngreso){
-            alert("Ingrese una fecha correcta")
+            modalReservas.classList.remove("hideModal")
         }else{
             push(reservasInDB, {
                 ingreso: formularioReservas.fechaInicio.value,

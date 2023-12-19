@@ -101,6 +101,30 @@
     text-align: center;
 }
 
+.showModalError{
+    position: absolute;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideModal{
+    visibility: hidden;
+}
+
+.mensajeModal{
+    padding: 50px;
+    background-color: orangered;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px;    
+}
+
 
 /* X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap */
